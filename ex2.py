@@ -21,7 +21,7 @@ def cfs(_x, _y):
     return np.dot(np.dot(np.linalg.inv(np.dot(np.transpose(_x), _x)), np.transpose(_x)), _y)
 
 
-lamb = 2
+lamb = 1.5
 x_sqr = np.square(training_x)
 
 _training_x = np.ones((len(training_x), 2))
